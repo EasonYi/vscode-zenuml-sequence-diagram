@@ -9,6 +9,9 @@ to `vscode-markdown-preview-enhanced`.
 
 The fork produces a VSCode extension called `ZenUML Sequence Diagram`, which enables [ZenUML support](https://zenuml.com/) 
 in previews.
+
+![intro](https://i.imgur.com/ymct2nT.png)
+
 ## License
 
 [University of Illinois/NCSA Open Source License](LICENSE.md)
