@@ -1,12 +1,12 @@
 {
     "name": "zenuml",
-    "displayName": "ZenUML Sequence Diagram",
+    "displayName": "ZenUML Sequence Diagram (Alpha)",
     "description": "ZenUML sequence diagram support for VS Code",
     "version": "0.4.3",
     "publisher": "MrCoder",
-    "repository": "https://github.com/shd101wyy/vscode-markdown-preview-enhanced",
+    "repository": "https://github.com/ZenUml/vscode-markdown-preview-enhanced",
     "bugs": {
-        "url": "https://github.com/shd101wyy/vscode-markdown-preview-enhanced/issues"
+        "url": "https://github.com/ZenUml/vscode-markdown-preview-enhanced/issues"
     },
     "license": "NCSA",
     "engines": {
@@ -40,8 +40,8 @@
         "commands": [
             {
                 "command": "zenuml.openPreviewToTheSide",
-                "title": "Markdown Preview Enhanced: Open Preview to the Side",
-                "category": "Markdown",
+                "title": "Open ZenUML preview to the side",
+                "category": "ZenUML",
                 "icon": {
                     "light": "./media/PreviewOnRightPane_16x.svg",
                     "dark": "./media/PreviewOnRightPane_16x_dark.svg"
@@ -130,7 +130,7 @@
                 "command": "zenuml.openPreviewToTheSide",
                 "key": "ctrl+k v",
                 "mac": "cmd+k v",
-                "when": "editorLangId == markdown"
+                "when": "editorLangId == zenuml"
             },
             {
                 "command": "zenuml.openPreview",
