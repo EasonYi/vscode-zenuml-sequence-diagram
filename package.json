@@ -26,8 +26,11 @@
     "contributes": {
         "languages": [
             {
-              "id": "zenuml",
-              "extensions": [".zen", "zenuml"]
+                "id": "zenuml",
+                "extensions": [
+                    ".zen",
+                    "zenuml"
+                ]
             }
         ],
         "grammars": [
