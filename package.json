@@ -30,6 +30,13 @@
               "extensions": [".zen", "zenuml"]
             }
         ],
+        "grammars": [
+            {
+                "language": "zenuml",
+                "scopeName": "source.zenuml",
+                "path": "./syntaxes/zenuml.tmGrammar.json"
+            }
+        ],
         "commands": [
             {
                 "command": "markdown-preview-enhanced.openPreviewToTheSide",
