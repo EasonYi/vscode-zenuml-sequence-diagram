@@ -24,6 +24,12 @@
     ],
     "main": "./out/src/extension",
     "contributes": {
+        "languages": [
+            {
+              "id": "zenuml",
+              "extensions": [".zen", "zenuml"]
+            }
+        ],
         "commands": [
             {
                 "command": "markdown-preview-enhanced.openPreviewToTheSide",
@@ -145,7 +151,7 @@
             "editor/context": [
                 {
                     "command": "markdown-preview-enhanced.openPreviewToTheSide",
-                    "when": "editorLangId == markdown",
+                    "when": "editorLangId == zenuml",
                     "group": "markdown-preview-enhanced"
                 }
             ],
