@@ -50,7 +50,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   function toggleScrollSync() {
     const config = vscode.workspace.getConfiguration(
-      "markdown-preview-enhanced",
+      "zenuml",
     );
     const scrollSync = !config.get<boolean>("scrollSync");
     config.update("scrollSync", scrollSync, true).then(() => {
@@ -65,7 +65,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   function toggleLiveUpdate() {
     const config = vscode.workspace.getConfiguration(
-      "markdown-preview-enhanced",
+      "zenuml",
     );
     const liveUpdate = !config.get<boolean>("liveUpdate");
     config.update("liveUpdate", liveUpdate, true).then(() => {
@@ -80,7 +80,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   function toggleBreakOnSingleNewLine() {
     const config = vscode.workspace.getConfiguration(
-      "markdown-preview-enhanced",
+      "zenuml",
     );
     const breakOnSingleNewLine = !config.get<boolean>("breakOnSingleNewLine");
     config
@@ -493,7 +493,7 @@ export function activate(context: vscode.ExtensionContext) {
         if (isMarkdownFile(textEditor.document)) {
           const sourceUri = textEditor.document.uri;
           const config = vscode.workspace.getConfiguration(
-            "markdown-preview-enhanced",
+            "zenuml",
           );
           const automaticallyShowPreviewOfMarkdownBeingEdited = config.get<
             boolean
@@ -542,133 +542,133 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.openPreviewToTheSide",
+      "zenuml.openPreviewToTheSide",
       openPreviewToTheSide,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.openPreview",
+      "zenuml.openPreview",
       openPreview,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.toggleScrollSync",
+      "zenuml.toggleScrollSync",
       toggleScrollSync,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.toggleLiveUpdate",
+      "zenuml.toggleLiveUpdate",
       toggleLiveUpdate,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.toggleBreakOnSingleNewLine",
+      "zenuml.toggleBreakOnSingleNewLine",
       toggleBreakOnSingleNewLine,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.openImageHelper",
+      "zenuml.openImageHelper",
       openImageHelper,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.runAllCodeChunks",
+      "zenuml.runAllCodeChunks",
       runAllCodeChunksCommand,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.runCodeChunk",
+      "zenuml.runCodeChunk",
       runCodeChunkCommand,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.syncPreview",
+      "zenuml.syncPreview",
       syncPreview,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.customizeCss",
+      "zenuml.customizeCss",
       customizeCSS,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.openMermaidConfig",
+      "zenuml.openMermaidConfig",
       openMermaidConfig,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.openMathJaxConfig",
+      "zenuml.openMathJaxConfig",
       openMathJaxConfig,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.openKaTeXConfig",
+      "zenuml.openKaTeXConfig",
       openKaTeXConfig,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.extendParser",
+      "zenuml.extendParser",
       extendParser,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.showUploadedImages",
+      "zenuml.showUploadedImages",
       showUploadedImages,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.insertNewSlide",
+      "zenuml.insertNewSlide",
       insertNewSlide,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.insertTable",
+      "zenuml.insertTable",
       insertTable,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.insertPagebreak",
+      "zenuml.insertPagebreak",
       insertPagebreak,
     ),
   );
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "markdown-preview-enhanced.createTOC",
+      "zenuml.createTOC",
       createTOC,
     ),
   );

@@ -1,9 +1,9 @@
 {
-    "name": "markdown-preview-enhanced",
-    "displayName": "Markdown Preview Enhanced",
-    "description": "Markdown Preview Enhanced ported to vscode",
+    "name": "zenuml",
+    "displayName": "ZenUML Sequence Diagram",
+    "description": "ZenUML sequence diagram support for VS Code",
     "version": "0.4.3",
-    "publisher": "shd101wyy",
+    "publisher": "MrCoder",
     "repository": "https://github.com/shd101wyy/vscode-markdown-preview-enhanced",
     "bugs": {
         "url": "https://github.com/shd101wyy/vscode-markdown-preview-enhanced/issues"
@@ -19,8 +19,8 @@
         "markdown"
     ],
     "activationEvents": [
-        "onLanguage:markdown",
-        "onCommand:markdown-preview-enhanced.openPreviewToTheSide"
+        "onLanguage:zenuml",
+        "onCommand:zenuml.openPreviewToTheSide"
     ],
     "main": "./out/src/extension",
     "contributes": {
@@ -39,7 +39,7 @@
         ],
         "commands": [
             {
-                "command": "markdown-preview-enhanced.openPreviewToTheSide",
+                "command": "zenuml.openPreviewToTheSide",
                 "title": "Markdown Preview Enhanced: Open Preview to the Side",
                 "category": "Markdown",
                 "icon": {
@@ -48,7 +48,7 @@
                 }
             },
             {
-                "command": "markdown-preview-enhanced.openPreview",
+                "command": "zenuml.openPreview",
                 "title": "Markdown Preview Enhanced: Open Preview",
                 "category": "Markdown",
                 "icon": {
@@ -57,99 +57,99 @@
                 }
             },
             {
-                "command": "markdown-preview-enhanced.toggleScrollSync",
+                "command": "zenuml.toggleScrollSync",
                 "title": "Markdown Preview Enhanced: Toggle Scroll Sync"
             },
             {
-                "command": "markdown-preview-enhanced.toggleLiveUpdate",
+                "command": "zenuml.toggleLiveUpdate",
                 "title": "Markdown Preview Enhanced: Toggle Live Update"
             },
             {
-                "command": "markdown-preview-enhanced.toggleBreakOnSingleNewLine",
+                "command": "zenuml.toggleBreakOnSingleNewLine",
                 "title": "Markdown Preview Enhanced: Toggle Break On Single New Line"
             },
             {
-                "command": "markdown-preview-enhanced.openImageHelper",
+                "command": "zenuml.openImageHelper",
                 "title": "Markdown Preview Enhanced: Image Helper"
             },
             {
-                "command": "markdown-preview-enhanced.runAllCodeChunks",
+                "command": "zenuml.runAllCodeChunks",
                 "title": "Markdown Preview Enhanced: Run All Code Chunks"
             },
             {
-                "command": "markdown-preview-enhanced.runCodeChunk",
+                "command": "zenuml.runCodeChunk",
                 "title": "Markdown Preview Enhanced: Run Code Chunk"
             },
             {
-                "command": "markdown-preview-enhanced.syncPreview",
+                "command": "zenuml.syncPreview",
                 "title": "Markdown Preview Enhanced: Sync Preview"
             },
             {
-                "command": "markdown-preview-enhanced.customizeCss",
+                "command": "zenuml.customizeCss",
                 "title": "Markdown Preview Enhanced: Customize CSS"
             },
             {
-                "command": "markdown-preview-enhanced.insertNewSlide",
+                "command": "zenuml.insertNewSlide",
                 "title": "Markdown Preview Enhanced: Insert New Slide"
             },
             {
-                "command": "markdown-preview-enhanced.insertTable",
+                "command": "zenuml.insertTable",
                 "title": "Markdown Preview Enhanced: Insert Table"
             },
             {
-                "command": "markdown-preview-enhanced.insertPagebreak",
+                "command": "zenuml.insertPagebreak",
                 "title": "Markdown Preview Enhanced: Insert Page Break"
             },
             {
-                "command": "markdown-preview-enhanced.createTOC",
+                "command": "zenuml.createTOC",
                 "title": "Markdown Preview Enhanced: Create TOC"
             },
             {
-                "command": "markdown-preview-enhanced.openMermaidConfig",
+                "command": "zenuml.openMermaidConfig",
                 "title": "Markdown Preview Enhanced: Open Mermaid Config"
             },
             {
-                "command": "markdown-preview-enhanced.openMathJaxConfig",
+                "command": "zenuml.openMathJaxConfig",
                 "title": "Markdown Preview Enhanced: Open MathJax Config"
             },
             {
-                "command": "markdown-preview-enhanced.openKaTeXConfig",
+                "command": "zenuml.openKaTeXConfig",
                 "title": "Markdown Preview Enhanced: Open KaTeX Config"
             },
             {
-                "command": "markdown-preview-enhanced.extendParser",
+                "command": "zenuml.extendParser",
                 "title": "Markdown Preview Enhanced: Extend Parser"
             },
             {
-                "command": "markdown-preview-enhanced.showUploadedImages",
+                "command": "zenuml.showUploadedImages",
                 "title": "Markdown Preview Enhanced: Show Uploaded Images"
             }
         ],
         "keybindings": [
             {
-                "command": "markdown-preview-enhanced.openPreviewToTheSide",
+                "command": "zenuml.openPreviewToTheSide",
                 "key": "ctrl+k v",
                 "mac": "cmd+k v",
                 "when": "editorLangId == markdown"
             },
             {
-                "command": "markdown-preview-enhanced.openPreview",
+                "command": "zenuml.openPreview",
                 "key": "ctrl+shift+v",
                 "mac": "cmd+shift+v",
                 "when": "editorLangId == markdown"
             },
             {
-                "command": "markdown-preview-enhanced.runAllCodeChunks",
+                "command": "zenuml.runAllCodeChunks",
                 "key": "ctrl+shift+enter",
                 "when": "editorLangId == markdown"
             },
             {
-                "command": "markdown-preview-enhanced.runCodeChunk",
+                "command": "zenuml.runCodeChunk",
                 "key": "shift+enter",
                 "when": "editorLangId == markdown"
             },
             {
-                "command": "markdown-preview-enhanced.syncPreview",
+                "command": "zenuml.syncPreview",
                 "key": "ctrl+shift+s",
                 "when": "editorLangId == markdown"
             }
@@ -157,14 +157,14 @@
         "menus": {
             "editor/context": [
                 {
-                    "command": "markdown-preview-enhanced.openPreviewToTheSide",
+                    "command": "zenuml.openPreviewToTheSide",
                     "when": "editorLangId == zenuml",
                     "group": "markdown-preview-enhanced"
                 }
             ],
             "editor/title": [
                 {
-                    "command": "markdown-preview-enhanced.openPreviewToTheSide",
+                    "command": "zenuml.openPreviewToTheSide",
                     "when": "editorLangId == markdown",
                     "group": "navigation"
                 }
@@ -174,42 +174,42 @@
             "type": "object",
             "title": "Markdown Preview Enhanced",
             "properties": {
-                "markdown-preview-enhanced.usePandocParser": {
+                "zenuml.usePandocParser": {
                     "description": "Enable this option will render markdown by pandoc instead of markdown-it.",
                     "default": false,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.breakOnSingleNewLine": {
+                "zenuml.breakOnSingleNewLine": {
                     "description": "In Markdown, a single newline character doesn't cause a line break in the generated HTML. In GitHub Flavored Markdown, that is not true. Enable this config option to insert line breaks in rendered HTML for single newlines in Markdown source.",
                     "default": true,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.scrollSync": {
+                "zenuml.scrollSync": {
                     "description": "Automatic scroll sync. This is now partially supported.",
                     "default": true,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.liveUpdate": {
+                "zenuml.liveUpdate": {
                     "description": "Re-render the preview as the contents of the source changes, without requiring the source buffer to be saved. If disabled, the preview is re-rendered only when the buffer is saved to disk.",
                     "default": true,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.singlePreview": {
+                "zenuml.singlePreview": {
                     "description": "Open Only One Preview.",
                     "default": true,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": {
+                "zenuml.automaticallyShowPreviewOfMarkdownBeingEdited": {
                     "description": "Automatically show preview of markdown being edited.",
                     "default": true,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.enableTypographer": {
+                "zenuml.enableTypographer": {
                     "description": "Enable smartypants and other sweet transforms.",
                     "default": false,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.mathRenderingOption": {
+                "zenuml.mathRenderingOption": {
                     "description": "Choose the Math expression rendering method here. You can also disable math rendering if you want by choosing 'None'.",
                     "default": "KaTeX",
                     "type": "string",
@@ -219,7 +219,7 @@
                         "None"
                     ]
                 },
-                "markdown-preview-enhanced.mathInlineDelimiters": {
+                "zenuml.mathInlineDelimiters": {
                     "description": "Use customized Math expression inline delimiters.",
                     "default": [
                         [
@@ -233,7 +233,7 @@
                     ],
                     "type": "array"
                 },
-                "markdown-preview-enhanced.mathBlockDelimiters": {
+                "zenuml.mathBlockDelimiters": {
                     "description": "Use customized Math expression block delimiters.",
                     "default": [
                         [
@@ -247,7 +247,7 @@
                     ],
                     "type": "array"
                 },
-                "markdown-preview-enhanced.mathRenderingOnlineService": {
+                "zenuml.mathRenderingOnlineService": {
                     "description": "Choose the Math expression rendering method option for GFM markdown export (Save as Markdown).",
                     "default": "https://latex.codecogs.com/gif.latex",
                     "type": "string",
@@ -257,37 +257,37 @@
                         "https://latex.codecogs.com/png.latex"
                     ]
                 },
-                "markdown-preview-enhanced.enableWikiLinkSyntax": {
+                "zenuml.enableWikiLinkSyntax": {
                     "description": "Enable Wiki Link syntax support. More information can be found at https://help.github.com/articles/adding-links-to-wikis/",
                     "default": true,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.enableLinkify": {
+                "zenuml.enableLinkify": {
                     "description": "Enable or disable conversion of URL-like text to links in the markdown preview.",
                     "default": true,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.wikiLinkFileExtension": {
+                "zenuml.wikiLinkFileExtension": {
                     "description": "By default, the extension for wikilink is `.md`. For example: [[test]] will direct to file path `test.md`.",
                     "default": ".md",
                     "type": "string"
                 },
-                "markdown-preview-enhanced.enableEmojiSyntax": {
+                "zenuml.enableEmojiSyntax": {
                     "description": "Enable emoji & font-awesome plugin. This only works for markdown-it parser, but not pandoc parser.",
                     "default": true,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.enableExtendedTableSyntax": {
+                "zenuml.enableExtendedTableSyntax": {
                     "description": "Enable extended table syntax to support merging table cells.",
                     "default": false,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.enableCriticMarkupSyntax": {
+                "zenuml.enableCriticMarkupSyntax": {
                     "description": "Enable CriticMarkup syntax. Only works with markdown-it parser. Please check http://criticmarkup.com/users-guide.php for more information.",
                     "default": false,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.frontMatterRenderingOption": {
+                "zenuml.frontMatterRenderingOption": {
                     "description": "Front matter rendering option",
                     "type": "string",
                     "enum": [
@@ -297,7 +297,7 @@
                     ],
                     "default": "none"
                 },
-                "markdown-preview-enhanced.mermaidTheme": {
+                "zenuml.mermaidTheme": {
                     "description": "Mermaid theme, you can choose one from [\"mermaid.css\", \"mermaid.dark.css\", \"mermaid.forest.css\"]",
                     "default": "mermaid.css",
                     "type": "string",
@@ -307,7 +307,7 @@
                         "forest"
                     ]
                 },
-                "markdown-preview-enhanced.codeBlockTheme": {
+                "zenuml.codeBlockTheme": {
                     "description": "Code block theme. If `auto.css` is chosen, then the code block theme that best matches the current preview theme will be picked.",
                     "default": "auto.css",
                     "type": "string",
@@ -337,7 +337,7 @@
                         "xonokai.css"
                     ]
                 },
-                "markdown-preview-enhanced.previewTheme": {
+                "zenuml.previewTheme": {
                     "description": "Preview Theme",
                     "default": "github-light.css",
                     "type": "string",
@@ -360,7 +360,7 @@
                         "vue.css"
                     ]
                 },
-                "markdown-preview-enhanced.revealjsTheme": {
+                "zenuml.revealjsTheme": {
                     "description": "RevealJS Presentation Theme",
                     "default": "white.css",
                     "type": "string",
@@ -379,17 +379,17 @@
                         "none.css"
                     ]
                 },
-                "markdown-preview-enhanced.protocolsWhiteList": {
+                "zenuml.protocolsWhiteList": {
                     "description": "Accepted protocols for links.",
                     "default": "http://, https://, atom://, file://, mailto:, tel:",
                     "type": "string"
                 },
-                "markdown-preview-enhanced.imageFolderPath": {
+                "zenuml.imageFolderPath": {
                     "description": "When using Image Helper to copy images, by default images will be copied to root image folder path '/assets'",
                     "default": "/assets",
                     "type": "string"
                 },
-                "markdown-preview-enhanced.imageUploader": {
+                "zenuml.imageUploader": {
                     "description": "You can choose different image uploader to upload image",
                     "default": "imgur",
                     "type": "string",
@@ -399,105 +399,105 @@
                         "qiniu"
                     ]
                 },
-                "markdown-preview-enhanced.AccessKey": {
+                "zenuml.AccessKey": {
                     "type": "string",
                     "default": "",
                     "description": "Qiniu AccessKey"
                 },
-                "markdown-preview-enhanced.SecretKey": {
+                "zenuml.SecretKey": {
                     "type": "string",
                     "default": "",
                     "description": "Qiniu SecretKey"
                 },
-                "markdown-preview-enhanced.Bucket": {
+                "zenuml.Bucket": {
                     "type": "string",
                     "default": "",
                     "description": "Qiniu Bucket"
                 },
-                "markdown-preview-enhanced.Domain": {
+                "zenuml.Domain": {
                     "type": "string",
                     "default": "http://",
                     "description": "Qiniu Domain"
                 },
-                "markdown-preview-enhanced.printBackground": {
+                "zenuml.printBackground": {
                     "description": "Whether to print background for file export or not. If set to `false`, then `github-light` preview theme will be used. You can also set `print_background` in front-matter for individual files.",
                     "default": false,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.chromePath": {
+                "zenuml.chromePath": {
                     "description": "Chrome executable path, which is used for Puppeteer export. Leaving it empty means the path will be found automatically.",
                     "default": "",
                     "type": "string",
                     "scope": "machine"
                 },
-                "markdown-preview-enhanced.imageMagickPath": {
+                "zenuml.imageMagickPath": {
                     "description": "ImageMagick command line path. Should be either `magick` or `convert`. Leaving it empty means the path will be found automatically.",
                     "default": "",
                     "type": "string",
                     "scope": "machine"
                 },
-                "markdown-preview-enhanced.pandocPath": {
+                "zenuml.pandocPath": {
                     "description": "Pandoc executable path",
                     "default": "pandoc",
                     "type": "string",
                     "scope": "machine"
                 },
-                "markdown-preview-enhanced.pandocMarkdownFlavor": {
+                "zenuml.pandocMarkdownFlavor": {
                     "description": "The pandoc markdown flavor you want",
                     "default": "markdown-raw_tex+tex_math_single_backslash",
                     "type": "string"
                 },
-                "markdown-preview-enhanced.pandocArguments": {
+                "zenuml.pandocArguments": {
                     "description": "Comma separated pandoc arguments e.g. `--smart, --filter=/bin/exe`. Please use long argument names.",
                     "default": "",
                     "type": "string"
                 },
-                "markdown-preview-enhanced.latexEngine": {
+                "zenuml.latexEngine": {
                     "description": "Default latex engine for Pandoc export and latex code chunk.",
                     "default": "pdflatex",
                     "type": "string"
                 },
-                "markdown-preview-enhanced.enableScriptExecution": {
+                "zenuml.enableScriptExecution": {
                     "description": "Enables executing code chunks and importing javascript files.\n⚠️ Please use this feature with caution because it may put your security at risk! Your machine can get hacked if someone makes you open a markdown with malicious code while script execution is enabled.",
                     "default": false,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.enableHTML5Embed": {
+                "zenuml.enableHTML5Embed": {
                     "description": " Enables transform audio video link to to html5 embed audio video tags.",
                     "default": false,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.HTML5EmbedUseImageSyntax": {
+                "zenuml.HTML5EmbedUseImageSyntax": {
                     "description": " Enables video/audio embed with ![]() syntax (default).",
                     "default": true,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.HTML5EmbedUseLinkSyntax": {
+                "zenuml.HTML5EmbedUseLinkSyntax": {
                     "description": "Enables video/audio embed with []() syntax.",
                     "default": false,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.HTML5EmbedIsAllowedHttp": {
+                "zenuml.HTML5EmbedIsAllowedHttp": {
                     "description": "When true embed media with http:// schema in URLs. When false ignore and don't embed them.",
                     "default": false,
                     "type": "boolean"
                 },
-                "markdown-preview-enhanced.HTML5EmbedAudioAttributes": {
+                "zenuml.HTML5EmbedAudioAttributes": {
                     "description": "HTML attributes to pass to audio tags.",
                     "default": "controls preload=\"metadata\" width=\"320\"",
                     "type": "string"
                 },
-                "markdown-preview-enhanced.HTML5EmbedVideoAttributes": {
+                "zenuml.HTML5EmbedVideoAttributes": {
                     "description": "HTML attributes to pass to video tags.",
                     "default": "controls preload=\"metadata\" width=\"320\" height=\"240\"",
                     "type": "string"
                 },
-                "markdown-preview-enhanced.puppeteerWaitForTimeout": {
+                "zenuml.puppeteerWaitForTimeout": {
                     "description": "Puppeteer waits for a certain timeout in milliseconds before the document export.",
                     "default": 0,
                     "type": "number"
                 },
-                "markdown-preview-enhanced.usePuppeteerCore": {
+                "zenuml.usePuppeteerCore": {
                     "description": "If set to true, then locally installed puppeteer-core will be required. Otherwise, the puppeteer globally installed by `npm install -g puppeteer` will be required.",
                     "default": true,
                     "type": "boolean"

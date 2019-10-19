@@ -53,7 +53,7 @@ export class MarkdownPreviewEnhancedConfig implements MarkdownEngineConfig {
 
   private constructor() {
     const config = vscode.workspace.getConfiguration(
-      "markdown-preview-enhanced",
+      "zenuml",
     );
 
     this.usePandocParser = config.get<boolean>("usePandocParser");
