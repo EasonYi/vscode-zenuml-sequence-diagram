@@ -1,5 +1,5 @@
-import * as mume from "@shd101wyy/mume";
-import { MarkdownEngine } from "@shd101wyy/mume";
+import * as mume from "zenuml-export";
+import { MarkdownEngine } from "zenuml-export";
 import { tmpdir } from "os";
 import * as path from "path";
 import * as vscode from "vscode";
@@ -329,6 +329,7 @@ export class MarkdownPreviewEnhancedView {
     editor: vscode.TextEditor,
     viewOptions: { viewColumn: vscode.ViewColumn; preserveFocus?: boolean },
   ) {
+    console.log('000000');
     const isUsingSinglePreview = useSinglePreview();
     let previewPanel: vscode.WebviewPanel;
     if (isUsingSinglePreview && this.singlePreviewPanel) {
@@ -440,6 +441,7 @@ export class MarkdownPreviewEnhancedView {
         contentSecurityPolicy: "",
       })
       .then((html) => {
+        console.log('1', html);
         previewPanel.webview.html = html;
       });
   }

@@ -3,7 +3,7 @@
 import * as path from "path";
 import * as vscode from "vscode";
 
-import { utility } from "@shd101wyy/mume";
+import { utility } from "zenuml-export";
 
 import { pasteImageFile, uploadImageFile } from "./image-helper";
 import {

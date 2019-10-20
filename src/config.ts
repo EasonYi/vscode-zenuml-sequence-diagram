@@ -1,5 +1,5 @@
-import { MarkdownEngineConfig } from "@shd101wyy/mume";
-import { MathRenderingOption } from "@shd101wyy/mume/out/src/markdown-engine-config";
+import { MarkdownEngineConfig } from "zenuml-export";
+import { MathRenderingOption } from "zenuml-export/out/src/markdown-engine-config";
 import * as vscode from "vscode";
 
 export class MarkdownPreviewEnhancedConfig implements MarkdownEngineConfig {

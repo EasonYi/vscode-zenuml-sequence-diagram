@@ -2,7 +2,7 @@
     "name": "zenuml",
     "displayName": "ZenUML Sequence Diagram (Alpha)",
     "description": "ZenUML sequence diagram support for VS Code",
-    "version": "0.5.1",
+    "version": "0.5.3",
     "publisher": "MrCoder",
     "repository": "https://github.com/ZenUml/vscode-markdown-preview-enhanced",
     "bugs": {
@@ -518,7 +518,7 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "dependencies": {
-        "@shd101wyy/mume": "^0.4.6",
+        "zenuml-export": "^0.4.6",
         "@types/vfile": "^3.0.2"
     },
     "devDependencies": {
