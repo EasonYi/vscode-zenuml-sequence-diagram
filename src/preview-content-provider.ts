@@ -803,7 +803,7 @@ export function getPreviewUri(uri: vscode.Uri) {
 
 export function isMarkdownFile(document: vscode.TextDocument) {
   return (
-    document.languageId === "markdown" &&
+    document.languageId === "zenuml" &&
     document.uri.scheme !== "markdown-preview-enhanced"
   ); // prevent processing of own documents
 }
